@@ -6,8 +6,11 @@ const addNote=(id,name,degree)=>{
      })
     //  console.log(dublicated)
      if(dublicated.length==0){
-         const total=degree[0]+degree[1]+degree[2];
-        //  console.log(total);
+          let total =0
+        degree.forEach(el=>{
+             total +=el
+        });
+       console.log(total);
         notes.push({
             id,
             name,
